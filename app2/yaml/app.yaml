@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: exam-app-web-deploy
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels: 
       app: exam-app-web
