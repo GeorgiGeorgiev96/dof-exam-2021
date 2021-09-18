@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: web-cont
-        image: ggeorgievv96/web-host:%IMAGE-PLACEHOLDER-WEB%
+        image: %imageweb%:%imagetag%
         ports:
         - containerPort: 80 
 ---
@@ -55,7 +55,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ggeorgievv96/db-host:%IMAGE-PLACEHOLDER-DB%
+  name: %imagedb%:%imagetag%
   labels:
     app: exam-app-db-svc
 spec:
